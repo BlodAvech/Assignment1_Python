@@ -52,10 +52,10 @@ def view_all_books(books):
         print("No books available in the library.")
         return
 
-    print(f"{'Title':<20}{'Author':<20}{'Year':<10}{'Copies'}")
-    print("-" * 60)
+    i = 1
     for book in books:
-        print(f"{book['title']:<20}{book['author']:<20}{book['year']:<10}{book['copies_available']}")
+        print(f"{i}. {book['title']} {book['author']} {book['year']} {book['copies_available']}")
+        i += 1
 
 def main():
     books = []
